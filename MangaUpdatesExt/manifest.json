@@ -1,0 +1,21 @@
+{
+    
+    "manifest_version": 3,
+    "name": "Manga Updates Backlog Manager",
+    "version": "1.0.0",
+    "description": "A extension to count unread series in  MangaUpdates",
+    "permissions": ["activeTab", "scripting"],
+    "author": "marxseny@gmail.com",
+    "permissions": ["scripting"],
+    "content_scripts": [
+        {
+            "matches": ["https://www.mangaupdates.com/*"],
+            "js": [ 
+                "script.js"
+            ],
+            "css": [
+                "main.css"
+            ]
+        }
+    ]
+}
