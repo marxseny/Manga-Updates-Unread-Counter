@@ -35,7 +35,7 @@ You need to download this project, and then open chrome, extensions (developer m
 After that, you're good to go. Just open your reading list on MangaUpdates and there should be the changed HTML.
 
 ## License
-This project is licensed under the [GNU General Public License v3.0] - see the LICENSE.md file for details.
+This project is licensed under the [GNU General Public License v3.0](https://github.com/marxseny/Manga-Updates-Unread-Counter/blob/main/LICENSE)
 
 ## Author
 This is a project by [@marxseny](https://twitter.com/marxseny)
