@@ -41,3 +41,5 @@ This project is licensed under the [GNU General Public License v3.0](https://git
 This is a project by [@marxseny](https://twitter.com/marxseny)
 
 ## Special thanks
+
+My cousing [Willer](https://github.com/willerpaternostro) helped me a bit with the code - drop him a follow!
