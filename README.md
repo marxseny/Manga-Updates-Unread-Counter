@@ -12,7 +12,7 @@ Default website
 After applying the extension:
 ![Extension on](https://i.imgur.com/dN8mF2s.png)
 
-It also replaces the title of the Reading List with a message saying: "Total unread chapters: x"
+It replaces the title of the Reading List with a message saying: "Total unread chapters: x"
 Also, it adds how many unread chapters are in each series. 
 For example: If you're reading "Gintama", the website will display by default which chapter is the latest released. 
 And the next column is which chapter you're at currently. If the latest chapter is 704 and your statuts is 26, this extension shows
