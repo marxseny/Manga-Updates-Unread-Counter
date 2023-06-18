@@ -4,7 +4,7 @@ This is  a simple unpacked chrome extension that counts how many unread chapters
 ## Description
 This extension simply changes the HTML of the Reading list page of your https://www.mangaupdates.com/mylist.html page.
 Example:
-![Extension off](https://imgur.com/1s7rBn2)
+![Extension off](https://i.imgur.com/1s7rBn2.png)
 ![Extension on](https://imgur.com/dN8mF2s)
 
 It replaces the title of the Reading List with a message saying: "Total unread chapters: x"
