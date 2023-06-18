@@ -42,4 +42,4 @@ This is a project by [@marxseny](https://twitter.com/marxseny)
 
 ## Special thanks
 
-My cousing [Willer](https://github.com/willerpaternostro) helped me a bit with the code - drop him a follow!
+My cousin [Willer](https://github.com/willerpaternostro) helped me a bit with the code - drop him a follow!
