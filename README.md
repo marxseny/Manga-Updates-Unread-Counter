@@ -17,7 +17,8 @@ Also, it adds how many unread chapters are in each series.
 For example: If you're reading "Gintama", the website will display by default which chapter is the latest released. 
 And the next column is which chapter you're at currently. If the latest chapter is 704 and your statuts is 26, this extension shows
 "unread: 678" after the "Gintama (c.704)" section.
-![Individual counter](https://i.imgur.com/4PqYRZL)
+Individual counter:
+![Individual counter](https://i.imgur.com/4PqYRZL.png)
 
 
 
