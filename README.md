@@ -1,5 +1,5 @@
 # Manga Updates Unread Chapters Counter
-This is  a simple unpacked chrome extension that counts how many unread chapters you have on your Reading List.
+This is  a simple unpacked chrome extension that counts how many unread chapters you have on your Reading List on MangaUpdates.com
 
 ## Description
 This extension simply changes the HTML of the Reading list page of your https://www.mangaupdates.com/mylist.html page.
