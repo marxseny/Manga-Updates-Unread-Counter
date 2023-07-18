@@ -12,33 +12,33 @@ Default Website:
 ![Extension off](https://i.imgur.com/NGOJHQS.png)
 
 Extension on:
-![Extension on](https://i.imgur.com/pcG5ITE)
+![Extension on](https://i.imgur.com/pcG5ITE.png)
 
 It replaces the title of the Reading List with a message saying: "Total unread chapters: X in Y series. Z are up to date."
 X being the sum of all unread chapters, Y being how many series are late and Z series are up to date.
 
 It also adds how many unread chapters are in each series. 
-![Individual Counter] (https://i.imgur.com/S1q6ITl.png)
+![Individual Counter](https://i.imgur.com/S1q6ITl.png)
 
 Improved sorting options for each "Sort List" settings on the website.
 
 - Alphabetically:
-![Alphabetically Descending] (https://i.imgur.com/09HZhHB.png)
-![Alphabetically Ascending] (https://i.imgur.com/h34qaYB.png)
+![Alphabetically Descending](https://i.imgur.com/09HZhHB.png)
+![Alphabetically Ascending](https://i.imgur.com/h34qaYB.png)
 
 - Average:
-![Average Descending] (https://i.imgur.com/hFQA2ne.png)
-![Average Ascending] (https://i.imgur.com/LGPLjhH.png)
+![Average Descending](https://i.imgur.com/hFQA2ne.png)
+![Average Ascending](https://i.imgur.com/LGPLjhH.png)
 
 - Rating:
-![Rating Descending] (https://i.imgur.com/CNzDJC7.png)
-![Rating Ascending] (https://i.imgur.com/CKonf0V.png)
+![Rating Descending](https://i.imgur.com/CNzDJC7.png)
+![Rating Ascending](https://i.imgur.com/CKonf0V.png)
 
 note: if you didn't add a rating score for a particular series, the extension considers it equal zero.
 
 - Latest Release and Unread Releases:
-![Unread Descending] (https://i.imgur.com/Tm6E4vg.png)
-![Unread Ascending] (https://i.imgur.com/Dsvc8Sy.png)
+![Unread Descending](https://i.imgur.com/Tm6E4vg.png)
+![Unread Ascending](https://i.imgur.com/Dsvc8Sy.png)
 
 
 ## Version History
