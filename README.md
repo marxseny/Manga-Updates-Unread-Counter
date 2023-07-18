@@ -12,7 +12,7 @@ Default Website:
 ![Extension off](https://i.imgur.com/NGOJHQS.png)
 
 Extension on:
-![Extension on](https://i.imgur.com/pcG5ITE.png)
+![Extension on](https://i.imgur.com/rXWCRh2.png)
 
 It replaces the title of the Reading List with a message saying: "Total unread chapters: X in Y series. Z are up to date."
 X being the sum of all unread chapters, Y being how many series are late and Z series are up to date.
