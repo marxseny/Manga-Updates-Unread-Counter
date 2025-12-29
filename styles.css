@@ -1,0 +1,593 @@
+/* ==========================================================================
+   GENERAL STYLES
+   ========================================================================== */
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   GENERAL BUTTONS AND CONTROLS
+   ========================================================================== */
+
+.muuc-sort-btn {
+  width: auto;
+  height: 28px;
+  padding: 4px 8px;
+  font-size: 12px;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 4px;
+  border: 1px solid #888;
+  cursor: pointer;
+  background-color: #e6e6e6;
+  color: #000;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+}
+
+.muuc-sort-btn:hover {
+  background-color: #d4d4d4;
+}
+
+.muuc-stats-btn {
+  background-color: #2b78ff !important;
+  color: white !important;
+  border: 1px solid #0056b3 !important;
+}
+
+.muuc-stats-btn:hover {
+  background-color: #0056b3 !important;
+}
+
+/* Filter Button (Purple) */
+.muuc-filter-btn {
+  background-color: #673ab7 !important;
+  color: white !important;
+  border: 1px solid #512da8 !important;
+}
+
+.muuc-filter-btn:hover {
+  background-color: #512da8 !important;
+}
+
+.muuc-data-link {
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0 5px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.muuc-link-backup {
+  color: #2b78ff;
+}
+
+.muuc-link-restore {
+  color: #28a745;
+}
+
+.muuc-link-delete {
+  color: #dc3545;
+}
+
+/* FIX 1: Transparent background to adapt to native Dark/Light Mode.
+   Removed fixed background (#f1f1f1) and borders to blend with the site theme.
+*/
+.muuc-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+.muuc-controls-container {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 5px;
+  color: inherit;
+}
+
+.muuc-checkbox-label {
+  font-size: 12px;
+  margin-right: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: inherit;
+}
+
+.muuc-checkbox-input {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.muuc-status-select {
+  font-size: 11px;
+  padding: 2px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  color: #000;
+}
+
+.muuc-hidden {
+  display: none !important;
+}
+
+/* --- PROGRESS BAR (THEME ADJUSTED) --- */
+.muuc-progress-container {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 15px;
+  font-size: 11px;
+  color: inherit; /* Inherits site color (White in Dark Mode, Black in Light) */
+  height: 28px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.muuc-progress-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.muuc-progress-bar-bg {
+  width: 100px;
+  height: 6px;
+  background-color: #ddd;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-right: 8px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.muuc-progress-bar-fill {
+  height: 100%;
+  background-color: #28a745;
+  width: 0%;
+  transition: width 0.3s ease-out;
+}
+
+.muuc-progress-text {
+  white-space: nowrap;
+  font-family: monospace;
+  color: inherit;
+}
+
+/* ==========================================================================
+   VISUAL INDICATORS IN TABLE
+   ========================================================================== */
+
+.muuc-unread {
+  color: red;
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-left: 5px;
+}
+
+.muuc-api-value {
+  color: #888;
+  font-size: 0.85em;
+  margin-left: 4px;
+}
+
+.muuc-local-value {
+  color: #2b78ff;
+  font-weight: bold;
+  font-size: 0.85em;
+  margin-left: 4px;
+}
+
+.muuc-bolt-api {
+  font-size: 0.85em;
+  margin-left: 5px;
+  cursor: help;
+  color: #fbc02d;
+  text-shadow: 1px 1px 0 #888;
+}
+
+.muuc-bolt-user {
+  font-size: 0.85em;
+  margin-left: 5px;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.muuc-bolt-user.muuc-filled {
+  color: #2b78ff;
+  text-shadow: 0 0 1px #004ba0;
+}
+
+.muuc-bolt-user:hover {
+  color: #2b78ff;
+}
+
+.muuc-tag {
+  font-size: 10px;
+  padding: 1px 4px;
+  border-radius: 3px;
+  margin-left: 5px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.muuc-tag-cancelled {
+  background-color: #d32f2f;
+}
+
+.muuc-tag-hiatus {
+  background-color: #f57c00;
+}
+
+.muuc-tag-completed {
+  background-color: #388e3c;
+}
+
+/* ==========================================================================
+   MODAL AND STATISTICS
+   ========================================================================== */
+
+/* FIX 2: Remove white background from stats container on main page.
+   Uses 'inherit' for text color to ensure readability across themes.
+*/
+.muuc-stats-container {
+  margin-top: 10px;
+  padding: 10px;
+  border-left: 4px solid #d32f2f; /* Keeps only the red accent bar */
+  background-color: transparent;
+  font-size: 13px;
+  line-height: 1.6;
+  color: inherit;
+}
+
+.muuc-red {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.muuc-green {
+  color: #388e3c;
+  font-weight: bold;
+}
+
+.muuc-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal keeps white background as it is a standard floating element */
+.muuc-modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 600px;
+  max-width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  color: #333;
+}
+
+.muuc-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.muuc-modal-title {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.muuc-modal-close {
+  font-size: 24px;
+  cursor: pointer;
+  color: #aaa;
+  line-height: 1;
+}
+
+.muuc-modal-close:hover {
+  color: #333;
+}
+
+.muuc-modal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.muuc-modal-footer {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Charts in Modal */
+.muuc-stat-section {
+  margin-bottom: 20px;
+}
+
+.muuc-stat-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 14px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 4px;
+  color: #444;
+}
+
+.muuc-stat-title small {
+  font-weight: normal;
+  font-size: 11px;
+  color: #888;
+  margin-left: 5px;
+}
+
+.muuc-chart-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+
+.muuc-chart-row.clickable {
+  cursor: pointer;
+}
+
+.muuc-chart-row.clickable:hover .muuc-chart-label {
+  color: #d32f2f;
+  text-decoration: line-through;
+}
+
+.muuc-chart-label {
+  width: 140px;
+  text-align: right;
+  padding-right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #555;
+}
+
+.muuc-chart-bar-container {
+  flex: 1;
+  background-color: #f1f1f1;
+  height: 18px;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.muuc-chart-bar {
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+.muuc-chart-value {
+  position: absolute;
+  left: 5px;
+  color: #333;
+  font-size: 10px;
+  font-weight: bold;
+  text-shadow: 0 0 2px white;
+}
+
+.bar-status-ongoing {
+  background-color: #42a5f5;
+}
+
+.bar-status-completed {
+  background-color: #66bb6a;
+}
+
+.bar-status-hiatus {
+  background-color: #ffa726;
+}
+
+.bar-status-cancelled {
+  background-color: #ef5350;
+}
+
+.bar-genre {
+  background-color: #ab47bc;
+}
+
+/* Tag Clouds */
+.muuc-tag-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.muuc-stat-tag {
+  background: #eee;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  color: #555;
+  cursor: pointer;
+  border: 1px solid transparent;
+  user-select: none;
+  transition: all 0.2s;
+}
+
+.muuc-stat-tag:hover {
+  background: #ddd;
+  border-color: #ccc;
+}
+
+.muuc-stat-tag.ignored {
+  background: #ffebee;
+  color: #c62828;
+  border-color: #ef9a9a;
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+.muuc-stat-tag.ignored:hover {
+  opacity: 1;
+  background: #ffcdd2;
+  text-decoration: none;
+}
+
+/* Filter States */
+.muuc-tag-state-include {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+  border-color: #a5d6a7;
+}
+
+.muuc-tag-state-exclude {
+  background-color: #ffcdd2;
+  color: #c62828;
+  border-color: #ef9a9a;
+}
+
+.muuc-ignored-section {
+  margin-top: 30px;
+  padding: 10px;
+  background: #fff8f8;
+  border: 1px dashed #ffcdd2;
+  border-radius: 5px;
+}
+
+.muuc-ignored-title {
+  font-weight: bold;
+  color: #c62828;
+  font-size: 12px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.muuc-accordion {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.muuc-accordion-header {
+  background-color: #f8f9fa;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
+.muuc-accordion-header:hover {
+  background-color: #e9ecef;
+  color: #2b78ff;
+}
+
+.muuc-accordion-header::after {
+  content: '▼';
+  font-size: 10px;
+  transition: transform 0.3s;
+}
+
+.muuc-accordion-header.collapsed::after {
+  transform: rotate(-90deg);
+}
+
+.muuc-accordion-body {
+  padding: 15px;
+  background-color: #fff;
+  display: block;
+}
+
+.muuc-accordion-body.hidden {
+  display: none;
+}
+
+.muuc-accordion-count {
+  font-weight: normal;
+  font-size: 11px;
+  color: #888;
+  margin-left: 5px;
+}
+
+.muuc-text-mostcommon {
+  color: #d32f2f;
+}
+
+.muuc-text-common {
+  color: #f57c00;
+}
+
+.muuc-text-uncommon {
+  color: #1976d2;
+}
+
+.muuc-text-rare {
+  color: #7b1fa2;
+}
+
+.muuc-text-unique {
+  color: #455a64;
+  font-style: italic;
+}
+
+/* Buttons */
+.muuc-btn-primary {
+  background: #2b78ff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.muuc-btn-primary:hover {
+  background: #0056b3;
+}
+
+.muuc-btn-secondary {
+  background: #eee;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.muuc-btn-secondary:hover {
+  background: #ddd;
+}

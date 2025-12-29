@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "Origin",
+          "operation": "set",
+          "value": "https://www.mangaupdates.com"
+        },
+        {
+          "header": "Referer",
+          "operation": "set",
+          "value": "https://www.mangaupdates.com/"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "||api.mangaupdates.com",
+      "resourceTypes": [
+        "xmlhttprequest"
+      ]
+    }
+  }
+]
